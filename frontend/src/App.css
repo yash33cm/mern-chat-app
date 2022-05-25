@@ -1,0 +1,19 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  background: url("https://cdn4.vectorstock.com/i/thumb-large/31/73/different-network-app-icons-seamless-pattern-vector-21873173.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.287);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
