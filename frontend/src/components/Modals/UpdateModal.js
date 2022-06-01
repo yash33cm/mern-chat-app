@@ -24,7 +24,7 @@ import Adduserlabel from "../User display/Adduserlabel";
 import UserlistItem from "../User display/UserlistItem";
 import axios from "axios";
 
-function UpdateModal({ fetchagain, setFetchagain }) {
+function UpdateModal({ fetchagain, setFetchagain, fetchmessages }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { user, selectedchat } = Chatstate();
   const [name, setname] = useState("");

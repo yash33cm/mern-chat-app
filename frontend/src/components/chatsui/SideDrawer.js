@@ -49,14 +49,14 @@ const SideDrawer = () => {
     try {
       setloading(true);
       if (!search) {
-        toast({
-          isClosable: true,
-          title: "Please type to search",
-          status: "warning",
-          duration: 3000,
-          position: "top-left",
-        });
-        setloading(false);
+        // toast({
+        //   isClosable: true,
+        //   title: "Please type to search",
+        //   status: "warning",
+        //   duration: 3000,
+        //   position: "top-left",
+        // });
+        // setloading(false);
         return;
       }
       const config = {
@@ -80,6 +80,11 @@ const SideDrawer = () => {
       });
       setloading(false);
     }
+  };
+
+  const handlechange = (e) => {
+    setsearch(e.target.value);
+    handlesearch();
   };
 
   const accesschat = async (userid) => {
@@ -179,7 +184,7 @@ const SideDrawer = () => {
             <Box d="flex" pb={2}>
               <Input
                 placeholder="search by name or email..."
-                onChange={(e) => setsearch(e.target.value)}
+                onChange={handlechange}
               />
               <Button ml={1} mb={1} onClick={handlesearch}>
                 search

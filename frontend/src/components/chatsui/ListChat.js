@@ -36,7 +36,7 @@ const ListChat = ({ fetchagain }) => {
     setloggeduser(JSON.parse(localStorage.getItem("userInfo")));
     fetchchats();
   }, [fetchagain]);
-  console.log(loggeduser);
+  // console.log(loggeduser);
   return (
     <Box
       d={{ base: selectedchat ? "none" : "flex", md: "flex" }}

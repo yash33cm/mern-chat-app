@@ -1,7 +1,7 @@
 .App {
   min-height: 100vh;
   display: flex;
-  background: url("https://cdn4.vectorstock.com/i/thumb-large/31/73/different-network-app-icons-seamless-pattern-vector-21873173.jpg");
+  background: url("background.jpg");
   background-size: cover;
   background-position: center;
 }
