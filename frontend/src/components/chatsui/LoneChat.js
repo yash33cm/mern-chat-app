@@ -212,7 +212,7 @@ function LoneChat({ fetchagain, setFetchagain }) {
             ) : (
               <div
                 className="messages"
-                style={{ marginBottom: `${istyping}?15:0` }}
+                style={{ marginBottom: istyping ? 10 : 0 }}
               >
                 <ScrollableChat messages={messages} />
               </div>
